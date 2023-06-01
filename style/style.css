@@ -1,21 +1,21 @@
 
 @font-face {
     font-family: "TT Norms Pro";
-    src: url(fonts/TTNormsPro-Light.woff);
+    src: url(./fonts/TTNormsPro-Light.woff);
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TT Norms Pro";
-    src: url(fonts/TTNormsPro-Medium.woff);
+    src: url(./fonts/TTNormsPro-Medium.woff);
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TT Norms Pro";
-    src: url(fonts/TTNormsPro-Bold.woff);
+    src: url(./fonts/TTNormsPro-Bold.woff);
     font-weight: 700;
     font-style: normal;
 }
@@ -29,7 +29,7 @@
 
 .header::before {
     position: absolute;
-    background-image: url(images/woman-new-2.png);
+    background-image: url(./images/woman-new-2.png);
     content: "";
     display: block;
     top: 84px;
@@ -39,7 +39,7 @@
     background-repeat: no-repeat;
     /*
     position: absolute;
-    background-image: url(images/main-2.png);
+    background-image: url(./images/main-2.png);
     content: "";
     display: block;
     top: 0;
@@ -167,7 +167,7 @@
 
 .Author::before {
     position: absolute;
-    background-image: url(images/a-w-2.png);
+    background-image: url(./images/a-w-2.png);
     content: "";
     display: block;
     top: 0px;
