@@ -1,21 +1,28 @@
 
 @font-face {
     font-family: "TT Norms Pro";
-    src: url(../fonts/TTNormsPro-Light.woff);
+    src: url(/fonts/TTNormsPro-Light.woff);
     font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TT Norms Pro";
-    src: url(../fonts/TTNormsPro-Medium.woff);
+    src: url(/fonts/TTNormsPro-Regular.woff);
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TT Norms Pro";
+    src: url(/fonts/TTNormsPro-Medium.woff);
     font-weight: 500;
     font-style: normal;
 }
 
 @font-face {
     font-family: "TT Norms Pro";
-    src: url(../fonts/TTNormsPro-Bold.woff);
+    src: url(/fonts/TTNormsPro-Bold.woff);
     font-weight: 700;
     font-style: normal;
 }
@@ -29,17 +36,17 @@
 
 .header::before {
     position: absolute;
-    background-image: url(../images/woman-new-2.png);
+    background-image: url(/images/main-32.png);
     content: "";
     display: block;
-    top: 84px;
+    top: 0px;
     bottom: 0px;
-    right: -10px;
-    width: 750px;
+    right: 0px;
+    width: 685px;
     background-repeat: no-repeat;
     /*
     position: absolute;
-    background-image: url(../images/main-2.png);
+    background-image: url(/images/main-2.png);
     content: "";
     display: block;
     top: 0;
@@ -167,7 +174,7 @@
 
 .Author::before {
     position: absolute;
-    background-image: url(../images/a-w-2.png);
+    background-image: url(../images/a-w-22.png);
     content: "";
     display: block;
     top: 0px;
@@ -216,24 +223,39 @@
 }
 
 .Author__list-item {
-    padding-bottom: 5px;
-    list-style-type: "•";
-    list-style-position: inside;
+    /*list-style-type: "•";
+    list-style-position: inside;*/
+    position: relative;
+    text-indent: 18px;
 }
+
+.Author__list-item::before {
+    position: absolute;
+    content: "";
+    display: block;
+    left: 0;
+    top: 10px;
+    background-color: #FF8D76;
+    width: 10px;
+    height: 10px;
+    border-radius: 15px;
+}
+
+/*
+.Author__list-item::marker {
+    color: #FF8D76;
+    font-size: 2.5rem;
+}*/
 
 .Author__list-item-bold {
     font-family: "TT Norms Pro";
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 29px;
     color: #fff;
     display: inline;
 }
 
-.Author__list-item::marker {
-    color: #FF8D76;
-    font-size: 2.5rem;
-}
 
 .Author__footer {
     padding: 46px 330px 60px 180px;
@@ -409,19 +431,19 @@
 }
 
 .form__input-wrap--persone::before {
-    background-image: url(../svg/persone.svg);
+    background-image: url(/svg/persone.svg);
 }
 
 .form__input-wrap--house::before {
-    background-image: url(../svg/house.svg);
+    background-image: url(/svg/house.svg);
 }
 
-.form__input-wrap--blank::before {
-    background-image: url(../svg/blank.svg);
+.form__input-wrap--phone::before {
+    background-image: url(/svg/phone.svg);
 }
 
 .form__input-wrap--mail::before {
-    background-image: url(../svg/mail.svg);
+    background-image: url(/svg/mail.svg);
 }
 
 .form__name-input::placeholder {
@@ -539,6 +561,14 @@
     transform: scale(1);
 }
 
+.input-check:invalid {
+    border-color: red;
+}
+
+.input-check:valid {
+    border-color: green;
+}
+
 .text-field {
     margin-bottom: 1rem;
 }
@@ -557,10 +587,10 @@
     border: 1px solid #EFF0F7;
     box-shadow: 0px 2px 6px rgba(19, 18, 66, 0.07);
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-    font-family: 'TT Norms Pro';
+    font-family: "TT Norms Pro";
     font-weight: 300;
-    font-size: 24px;
-    line-height: 36px;
+    font-size: 18px;
+    line-height: 16px;
     color: #A19CAF;
     text-indent: 10px;
 }
@@ -579,10 +609,25 @@
 }
 
 
-/*extreme gay panic*/
+
+.question__form-textarea-wrap {
+    position: relative;
+    width: 1200px;
+}
+
+.question__form-textarea-span {
+    position: absolute;
+    right: -15px;
+    bottom: 15px;
+    font-family: 'TT Norms Pro';
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 26px;
+    color: #A19CAF;
+}
 
 .question__form-textarea {
-    width: 1299px;
+    width: 1200px;
     height: 150px;
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     border-radius: 13px;
@@ -593,6 +638,7 @@
     border-style: none;
     padding: 5px 15px;
     resize: none;
+    
 }
 
 .question__form-textarea:focus {
@@ -626,7 +672,7 @@
     position: absolute;
     display: block;
     content: "";
-    background-image: url(svg/letters.svg);
+    background-image: url(/svg/letters.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -691,4 +737,9 @@
     font-size: 16px;
     line-height: 20px;
     color: #2583CE;
+}
+
+.link-under-line {
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }

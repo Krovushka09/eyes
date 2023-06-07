@@ -33,7 +33,7 @@
                 <label class="form__name">
                   <p>ФИО ребенка *</p>
                   <div class="form__input-wrap form__input-wrap--persone">
-                    <input class="form__name-input" type="text" placeholder="Иванов Иван Иванович">
+                    <input class="form__name-input input-check" type="text" placeholder="Иванов Иван Иванович" required>
                   </div>
                 </label>
               </div>
@@ -41,15 +41,15 @@
                 <label class="form__name">
                   <p>Возраст ребенка *</p>
                   <div class="form__input-wrap form__input-wrap--house">
-                    <input class="form__name-input" type="text" placeholder="(полных лет)">
+                    <input class="form__name-input input-check" type="text" placeholder="(полных лет)" required>
                   </div>
                 </label>
               </div>
               <div class="form__box-item">
                 <label class="form__name">
                   <p>Телефон</p>
-                  <div class="form__input-wrap form__input-wrap--blank">
-                    <input class="form__name-input" type="text" placeholder="(123) 456-7890">
+                  <div class="form__input-wrap form__input-wrap--phone">
+                    <input class="form__name-input form__name-input--phone" type="text" placeholder="(123) 456-7890">
                   </div>
                 </label>
               </div>
@@ -57,7 +57,7 @@
                 <label class="form__name">
                   <p>Email</p>
                   <div class="form__input-wrap form__input-wrap--mail">
-                    <input class="form__name-input" type="text" placeholder="Адрес email">
+                    <input class="form__name-input form__name-input--mail" type="text" placeholder="Адрес email">
                   </div>
                 </label>
               </div>
@@ -246,10 +246,11 @@
           <form class="question__form">
             <h2 class="question__form-title">4. Если вы ответили «‎да» в предыдущем вопросе, укажите название препарата‎</h2>
             <div class="decor"></div>
-            <p>
+            <p class="question__form-textarea-wrap">
               <textarea class="question__form-textarea" id="textarea" name="textarea" required
               placeholder="можно указать группу препаратов, например антибактериальные капли, увлажнящие капли и т.п."
               maxlength="180"></textarea>
+              <span class="question__form-textarea-span">0/180</span>
             </p>
           </form>
         </div>
@@ -836,10 +837,11 @@
           <form class="question__form">
             <h2 class="question__form-title">19. Если вы ответили «‎да» в предыдущем вопросе, укажите, при каких обстоятельствах</h2>
             <div class="decor"></div>
-            <p>
+            <p class="question__form-textarea-wrap">
               <textarea class="question__form-textarea" id="textarea" name="textarea" required
               placeholder="например на улице, при ярком освещении, в помещениях с низкой влажностью (кондиционер, центральное отопление)"
               maxlength="180"></textarea>
+              <span class="question__form-textarea-span">0/180</span>
             </p>
           </form>
         </div>
@@ -1032,7 +1034,7 @@
       <div class="second-white-decore">
         <div class="container">
           <div class="second-white-decore__box">
-            <a href="./pages/thxu.html" class="link">
+            <a href="thxu.html" class="link">
               <button class="second-white-decore__btn sluvery-btn" >ЗАВЕРШИТЬ</button>
             </a>
           </div>
@@ -1042,5 +1044,6 @@
     <footer class="footer">
       <p class="company">Екатеринбургский центр МНТК «Микрохирургия глаза», 2023</p>
     </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
