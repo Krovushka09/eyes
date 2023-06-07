@@ -258,6 +258,8 @@
 
 
 .Author__footer {
+    position: relative;
+    z-index: 2;
     padding: 46px 330px 60px 180px;
     background-color: #fff;
     display: flex;
@@ -632,9 +634,9 @@
     filter: drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.25));
     border-radius: 13px;
     font-family: "TT Norms Pro";
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 300;
-    line-height: 37px;
+    line-height: 27px;
     border-style: none;
     padding: 5px 15px;
     resize: none;
